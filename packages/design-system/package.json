@@ -10,8 +10,15 @@
   "license": "MIT",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
-    "dev": "concurrently \"tsup src/index.tsx --format esm,cjs --dts --external react --watch\" \"tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch\"",
-    "clean": "rm -rf dist"
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch & tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "clean": "rm -rf dist",
+    "lint": "TIMING=1 eslint src/**/*.ts* --fix",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md}\"",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "1.0.1",
+    "classnames": "2.3.2"
   },
   "devDependencies": {
     "@types/react": "18.0.25",

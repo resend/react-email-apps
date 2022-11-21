@@ -18,8 +18,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className="bg-zinc-900">
+      <Html className="text-slate-12 bg-black">
         <Head />
+
         <body>
           <Main />
           <NextScript />
