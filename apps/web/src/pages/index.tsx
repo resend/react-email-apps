@@ -20,7 +20,7 @@ export default function Web() {
           <Pipe className="absolute left-0 -bottom-[130px] rotate-45 animate-[dash_12s]" /> */}
           <div className="max-w-[745px] text-center">
             <Heading
-              className="before:bg-shine relative mb-8 !text-white/80 before:absolute before:left-0 before:top-0 before:w-full before:animate-[shine_2s_ease-in-out] before:bg-[length:200%] before:bg-clip-text before:text-transparent before:content-['The_next_generation_of_writing_emails']"
+              className="before:bg-shine relative mb-8 !text-white/80 before:absolute before:left-0 before:top-0 before:w-full before:animate-[shine_2s_ease-in-out] before:bg-[length:200%] before:bg-clip-text before:text-transparent before:content-['The_next_generation_of_writing_emails'] "
               size="10"
             >
               The next generation of writing emails
@@ -39,7 +39,7 @@ export default function Web() {
                 <IconArrowRight />
               </Link>
             </Button>
-            <Code language="bash" className="max-w-max">
+            <Code language="bash" className="hidden max-w-max md:!inline-flex">
               npm install @react-email/button
             </Code>
           </div>

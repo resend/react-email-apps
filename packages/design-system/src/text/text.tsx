@@ -59,7 +59,7 @@ const getSizesClassNames = (size: TextSize | undefined) => {
     case '4':
       return 'text-lg';
     case '5':
-      return 'text-xl tracking-[-0.16px]';
+      return ['text-17px', 'md:text-xl tracking-[-0.16px]'];
     case '6':
       return 'text-2xl tracking-[-0.288px]';
     case '7':

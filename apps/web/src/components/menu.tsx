@@ -22,11 +22,14 @@ export const Menu = React.forwardRef<MenuElement, Readonly<MenuProps>>(
         <MenuItem href={GITHUB_URL}>GitHub</MenuItem>
         <MenuItem href={DISCORD_URL}>Discord</MenuItem>
       </ul>
-      <span aria-hidden="true" className="bg-slate-6 mr-2 h-5 w-px" />
+      <span
+        aria-hidden="true"
+        className="bg-slate-6 mr-2 hidden h-5 w-px sm:!inline-block"
+      />
       <Button asChild appearance="gradient" size="3">
         <Link href="https://react.email/docs">
           Go to Docs
-          <IconArrowRight />
+          <IconArrowRight className="hidden sm:!inline-block" />
         </Link>
       </Button>
     </nav>
