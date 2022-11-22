@@ -49,6 +49,7 @@ export default function Web() {
       <Image
         className="absolute top-[220px] left-0 z-[10] h-full w-full select-none md:top-0"
         fill
+        priority
         src="/static/bg.png"
         alt={''}
         style={{ position: 'absolute' }}
