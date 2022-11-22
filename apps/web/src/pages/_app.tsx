@@ -12,15 +12,32 @@ const inter = Inter({
 });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  const title = 'React Email';
+  const description =
+    'A collection of high-quality, unstyled components for creating beautiful emails.';
+
   return (
     <main className={`${inter.variable} font-sans`}>
       <Head>
         <title>
-          React Email — A collection of high-quality, unstyled components for
-          creating beautiful emails.
+          {title} — {description}
         </title>
         <link rel="icon" href="/static/favicon.ico" sizes="any" />
         <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+
+        <meta property="og:title" content={`${title} — ${description}`} />
+        <meta property="og:description" content={`${title} — ${description}`} />
+        <meta
+          name="twitter:image"
+          content="https://react.email/static/cover.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta property="og:title" content={`${title} — ${description}`} />
+        <meta property="og:description" content={`${title} — ${description}`} />
+        <meta property="og:image" content="static/cover.png" />
+        <meta property="og:url" content="https://react.email" />
+        <meta property="og:type" content="website" />
       </Head>
       <Component {...pageProps} />
       <Analytics />
