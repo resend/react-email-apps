@@ -3,6 +3,7 @@ import 'design-system/styles.css';
 import { Inter } from '@next/font/google';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </main>
   );
 }
