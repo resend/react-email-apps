@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import Highlight, { defaultProps, Language } from 'prism-react-renderer';
 import * as React from 'react';
-import { IconButton, IconClipboard } from 'design-system';
+import { IconButton, IconCheck, IconClipboard } from 'design-system';
 
 interface CodeProps {
   children: any;
@@ -72,14 +72,21 @@ export const Code: React.FC<Readonly<CodeProps>> = ({
             boxShadow: 'rgb(0 0 0 / 10%) 0px 5px 30px -5px',
           }}
         >
-          <IconButton className="absolute right-2">
-            <IconClipboard />
+          <IconButton
+            className="absolute right-2"
+            onClick={() => {
+              setIsCopied(true);
+              navigator.clipboard.writeText(value);
+              setTimeout(() => setIsCopied(false), 3000);
+            }}
+          >
+            {isCopied ? <IconCheck /> : <IconClipboard />}
           </IconButton>
           <div
-            className="absolute right-0 top-0 h-px w-[300px]"
+            className="absolute right-0 top-0 h-px w-[200px]"
             style={{
               background:
-                'linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0) 0%, rgba(232, 232, 232, 0.2) 33.02%, rgba(143, 143, 143, 0.6719) 64.41%, rgba(236, 72, 153, 0) 98.%)',
+                'linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0) 0%, rgba(232, 232, 232, 0.2) 33.02%, rgba(143, 143, 143, 0.6719) 64.41%, rgba(236, 72, 153, 0) 98.93%)',
             }}
           />
           {tokens.map((line, i) => {
@@ -110,7 +117,7 @@ export const Code: React.FC<Readonly<CodeProps>> = ({
             );
           })}
           <div
-            className="absolute left-0 bottom-0 h-px w-[300px]"
+            className="absolute left-0 bottom-0 h-px w-[200px]"
             style={{
               background:
                 'linear-gradient(90deg, rgba(56, 189, 248, 0) 0%, rgba(56, 189, 248, 0) 0%, rgba(232, 232, 232, 0.2) 33.02%, rgba(143, 143, 143, 0.6719) 64.41%, rgba(236, 72, 153, 0) 98.93%)',

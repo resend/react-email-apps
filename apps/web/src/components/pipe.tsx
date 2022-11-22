@@ -20,6 +20,7 @@ export const Pipe = React.forwardRef<PipeElement, Readonly<RootProps>>(
         <path
           d="M171 1L96.8 1C94.0386 1 91.8 3.23857 91.8 6V31C91.8 33.7614 89.5614 36 86.8 36H0"
           stroke="url(#paint0_linear_3_508)"
+          strokeWidth="0.5"
         />
       </g>
       <defs>

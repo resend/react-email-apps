@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+export * from './anchor';
 export * from './button';
 export * from './heading';
 export * from './icons';
