@@ -41,17 +41,21 @@ module.exports = {
         shine:
           'linear-gradient(45deg, rgba(255,255,255,0) 45%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 55%,rgba(255,255,255,0) 100%)',
       },
-      keyframes: {
-        shine: {
-          '0%': { backgroundPosition: '-100%' },
-          '100%': { backgroundPosition: '100%' },
-        },
-        dash: {
-          '0%': { strokeDashoffset: 1000 },
-          '100%': { strokeDashoffset: 0 },
-        },
-      },
       colors: {
+        cyan: {
+          1: colors.cyanDarkA.cyanA1,
+          2: colors.cyanDarkA.cyanA2,
+          3: colors.cyanDarkA.cyanA3,
+          4: colors.cyanDarkA.cyanA4,
+          5: colors.cyanDarkA.cyanA5,
+          6: colors.cyanDarkA.cyanA6,
+          7: colors.cyanDarkA.cyanA7,
+          8: colors.cyanDarkA.cyanA8,
+          9: colors.cyanDarkA.cyanA9,
+          10: colors.cyanDarkA.cyanA10,
+          11: colors.cyanDarkA.cyanA11,
+          12: colors.cyanDarkA.cyanA12,
+        },
         slate: {
           1: colors.slateDarkA.slateA1,
           2: colors.slateDarkA.slateA2,
@@ -69,6 +73,16 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
+      },
+      keyframes: {
+        shine: {
+          '0%': { backgroundPosition: '-100%' },
+          '100%': { backgroundPosition: '100%' },
+        },
+        dash: {
+          '0%': { strokeDashoffset: 1000 },
+          '100%': { strokeDashoffset: 0 },
+        },
       },
     },
   },
