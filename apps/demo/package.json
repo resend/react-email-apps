@@ -9,6 +9,7 @@
     "@react-email/avatar": "*",
     "@react-email/button": "*",
     "@react-email/code": "*",
+    "@react-email/column": "*",
     "@react-email/container": "*",
     "@react-email/head": "*",
     "@react-email/heading": "*",
@@ -20,6 +21,7 @@
     "@react-email/pre": "*",
     "@react-email/preview": "*",
     "@react-email/render": "*",
+    "@react-email/section": "*",
     "@react-email/text": "*",
     "@react-email/ul": "*",
     "react-email": "1.0.6"
