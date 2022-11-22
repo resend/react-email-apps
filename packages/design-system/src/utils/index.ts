@@ -1,2 +1,2 @@
-export * from './as'
-export * from './unreachable'
+export * from './as';
+export * from './unreachable';
