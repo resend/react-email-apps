@@ -13,27 +13,29 @@ export default function Email() {
       <Head />
       <Container style={container}>
         <Img
-          src='https://assets.react.email/demo/plaid.png' width='212' height='88' alt='Plaid' style={logo}
+          src="https://assets.react.email/demo/plaid.png"
+          width="212"
+          height="88"
+          alt="Plaid"
+          style={logo}
         />
-        <Text style={tertiary}>
-          Verify Your Identity
-        </Text>
+        <Text style={tertiary}>Verify Your Identity</Text>
         <Text style={secondary}>
           Enter the following code to finish linking Venmo.
         </Text>
         <Section style={codeContainer}>
           <Text style={code}>144833</Text>
         </Section>
+        <Text style={paragraph}>Not expecting this email?</Text>
         <Text style={paragraph}>
-          Not expecting this email?
-        </Text>
-        <Text style={paragraph}>
-          Contact <Link href='mailto:login@plaid.com' style={link}>login@plaid.com</Link> if you did not request this code.
+          Contact{' '}
+          <Link href="mailto:login@plaid.com" style={link}>
+            login@plaid.com
+          </Link>{' '}
+          if you did not request this code.
         </Text>
       </Container>
-      <Text style={footer}>
-        Securely powered by Plaid.
-      </Text>
+      <Text style={footer}>Securely powered by Plaid.</Text>
     </Html>
   );
 }
@@ -46,11 +48,11 @@ const container = {
   marginTop: '20px',
   width: '360px',
   margin: '0 auto',
-  padding: '68px 0 130px'
+  padding: '68px 0 130px',
 };
 
 const logo = {
-  margin: '0 auto'
+  margin: '0 auto',
 };
 
 const tertiary = {
@@ -63,7 +65,7 @@ const tertiary = {
   lineHeight: '16px',
   margin: '16px 8px 8px 8px',
   textTransform: 'uppercase' as const,
-  textAlign: 'center' as const
+  textAlign: 'center' as const,
 };
 
 const secondary = {
@@ -75,7 +77,7 @@ const secondary = {
   lineHeight: '24px',
   marginBottom: '0',
   marginTop: '0',
-  textAlign: 'center' as const
+  textAlign: 'center' as const,
 };
 
 const codeContainer = {
@@ -83,7 +85,7 @@ const codeContainer = {
   borderRadius: '4px',
   margin: '16px auto 14px',
   verticalAlign: 'middle',
-  width: '280px'
+  width: '280px',
 };
 
 const code = {
@@ -98,7 +100,7 @@ const code = {
   paddingTop: '8px',
   margin: '0 auto',
   width: '100%',
-  textAlign: 'center' as const
+  textAlign: 'center' as const,
 };
 
 const paragraph = {
@@ -114,7 +116,7 @@ const paragraph = {
 
 const link = {
   color: '#444',
-  textDecoration: 'underline'
+  textDecoration: 'underline',
 };
 
 const footer = {
@@ -128,4 +130,4 @@ const footer = {
   fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
   textAlign: 'center' as const,
   textTransform: 'uppercase' as const,
-}
+};
