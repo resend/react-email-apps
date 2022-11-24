@@ -106,7 +106,7 @@ export default function Email() {
                     <tr>
                       <td style={{ paddingLeft: '12px', paddingRight: '12px' }}>
                         <Img
-                          src="https://demo.react.email/static/images/notion-logo.png"
+                          src="https://assets.react.email/demo/notion-logo.png"
                           width="32"
                           height="32"
                           alt="Notion's Logo"

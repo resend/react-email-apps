@@ -38,7 +38,7 @@ export default function Email() {
                     <td align="center">
                       <div style={{ marginTop: '32px' }}>
                         <Img
-                          src="https://demo.react.email/static/images/vercel-logo.png"
+                          src="https://assets.react.email/demo/vercel-logo.png"
                           width="40"
                           height="37"
                           alt="Vercel"
@@ -88,7 +88,7 @@ export default function Email() {
                           </td>
                           <td style={center} align="left" valign="middle">
                             <Img
-                              src="https://demo.react.email/static/images/vercel-arrow.png"
+                              src="https://assets.react.email/demo/vercel-arrow.png"
                               width="12"
                               height="9"
                               alt="invited you to"

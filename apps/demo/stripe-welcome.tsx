@@ -24,7 +24,7 @@ export default function Email() {
             <Container style={container}>
               <div style={box}>
                 <Img
-                  src="https://demo.react.email/static/images/stripe-logo.png"
+                  src="https://assets.react.email/demo/stripe-logo.png"
                   width="49"
                   height="21"
                   alt="Stripe"
