@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Logo } from 'design-system';
 import classnames from 'classnames';
+import Link from 'next/link';
 import { Menu } from '../components/menu';
 
 type TopbarElement = React.ElementRef<'header'>;
@@ -18,7 +19,9 @@ export const Topbar = React.forwardRef<TopbarElement, Readonly<TopbarProps>>(
       )}
       {...props}
     >
-      <Logo />
+      <Link href="/">
+        <Logo />
+      </Link>
       <Menu />
     </header>
   ),
