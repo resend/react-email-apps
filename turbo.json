@@ -2,8 +2,13 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ]
     },
     "lint": {
       "outputs": []
@@ -13,11 +18,15 @@
     },
     "web#build": {
       "dependsOn": [
-        "^build",
-        "$KLOTTY_API_KEY",
-        "$NEXT_PUBLIC_SUPABASE_ANON_KEY"
+        "^build"
       ],
-      "outputs": [".next/**"]
+      "outputs": [
+        ".next/**"
+      ],
+      "env": [
+        "KLOTTY_API_KEY",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY"
+      ]
     }
   }
 }
