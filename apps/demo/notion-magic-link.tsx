@@ -32,9 +32,9 @@ export default function Email() {
           <Text style={{ ...text, marginBottom: '14px' }}>
             Or, copy and paste this temporary login code:
           </Text>
-          <Code style={code}>
+          <code style={code}>
             sparo-ndigo-amurt-secan
-          </Code>
+          </code>
           <Text
             style={{
               ...text,
