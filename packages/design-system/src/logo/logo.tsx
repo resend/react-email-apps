@@ -6,9 +6,9 @@ type RootProps = React.ComponentPropsWithoutRef<'svg'>;
 export const Logo = React.forwardRef<LogoElement, Readonly<RootProps>>(
   ({ ...props }, forwardedRef) => (
     <svg
-      width="40"
-      height="40"
-      viewBox="0 0 32 32"
+      width="119"
+      height="32"
+      viewBox="0 0 119 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
