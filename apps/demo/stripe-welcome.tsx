@@ -5,6 +5,8 @@ import { Hr } from '@react-email/hr';
 import { Html } from '@react-email/html';
 import { Img } from '@react-email/img';
 import { Link } from '@react-email/link';
+import { Preview } from '@react-email/preview';
+import { Section } from '@react-email/section';
 import { Text } from '@react-email/text';
 import * as React from 'react';
 
@@ -12,93 +14,84 @@ export default function Email() {
   return (
     <Html>
       <Head />
-      <table
-        style={main}
-        width="100%"
-        border={0}
-        cellSpacing="0"
-        cellPadding="0"
-      >
-        <tr>
-          <td>
-            <Container style={container}>
-              <div style={box}>
-                <Img
-                  src="https://assets.react.email/demo/stripe-logo.png"
-                  width="49"
-                  height="21"
-                  alt="Stripe"
-                />
-                <Hr style={hr} />
-                <Text style={paragraph}>
-                  Thanks for submitting your account information. You're now
-                  ready to make live transactions with Stripe!
-                </Text>
-                <Text style={paragraph}>
-                  You can view your payments and a variety of other information
-                  about your account right from your dashboard.
-                </Text>
-                <Button
-                  pX={10}
-                  pY={10}
-                  style={button}
-                  href="https://dashboard.stripe.com/login"
-                >
-                  View your Stripe Dashboard
-                </Button>
-                <Hr style={hr} />
-                <Text style={paragraph}>
-                  If you haven't finished your integration, you might find our{' '}
-                  <Link style={anchor} href="https://stripe.com/docs">
-                    docs
-                  </Link>{' '}
-                  handy.
-                </Text>
-                <Text style={paragraph}>
-                  Once you're ready to start accepting payments, you'll just
-                  need to use your live{' '}
-                  <Link
-                    style={anchor}
-                    href="https://dashboard.stripe.com/login?redirect=%2Fapikeys"
-                  >
-                    API keys
-                  </Link>{' '}
-                  instead of your test API keys. Your account can simultaneously
-                  be used for both test and live requests, so you can continue
-                  testing while accepting live payments. Check out our{' '}
-                  <Link style={anchor} href="https://stripe.com/docs/dashboard">
-                    tutorial about account basics
-                  </Link>
-                  .
-                </Text>
-                <Text style={paragraph}>
-                  Finally, we've put together a{' '}
-                  <Link
-                    style={anchor}
-                    href="https://stripe.com/docs/checklist/website"
-                  >
-                    quick checklist
-                  </Link>{' '}
-                  to ensure your website conforms to card network standards.
-                </Text>
-                <Text style={paragraph}>
-                  We'll be here to help you with any step along the way. You can
-                  find answers to most questions and get in touch with us on our{' '}
-                  <Link style={anchor} href="https://support.stripe.com/">
-                    support site
-                  </Link>
-                  .
-                </Text>
-                <Text style={paragraph}>— The Stripe team</Text>
-                <Hr style={hr} />
-                <Text style={footer}>
-                  Stripe, 354 Oyster Point Blvd, South San Francisco, CA 94080
-                </Text>
-              </div>
-            </Container>
-          </td>
-        </tr>
-      </table>
+      <Preview>You're now ready to make live transactions with Stripe!</Preview>
+      <Section style={main}>
+        <Container style={container}>
+          <Section style={box}>
+            <Img
+              src="https://assets.react.email/demo/stripe-logo.png"
+              width="49"
+              height="21"
+              alt="Stripe"
+            />
+            <Hr style={hr} />
+            <Text style={paragraph}>
+              Thanks for submitting your account information. You're now
+              ready to make live transactions with Stripe!
+            </Text>
+            <Text style={paragraph}>
+              You can view your payments and a variety of other information
+              about your account right from your dashboard.
+            </Text>
+            <Button
+              pX={10}
+              pY={10}
+              style={button}
+              href="https://dashboard.stripe.com/login"
+            >
+              View your Stripe Dashboard
+            </Button>
+            <Hr style={hr} />
+            <Text style={paragraph}>
+              If you haven't finished your integration, you might find our{' '}
+              <Link style={anchor} href="https://stripe.com/docs">
+                docs
+              </Link>{' '}
+              handy.
+            </Text>
+            <Text style={paragraph}>
+              Once you're ready to start accepting payments, you'll just
+              need to use your live{' '}
+              <Link
+                style={anchor}
+                href="https://dashboard.stripe.com/login?redirect=%2Fapikeys"
+              >
+                API keys
+              </Link>{' '}
+              instead of your test API keys. Your account can simultaneously
+              be used for both test and live requests, so you can continue
+              testing while accepting live payments. Check out our{' '}
+              <Link style={anchor} href="https://stripe.com/docs/dashboard">
+                tutorial about account basics
+              </Link>
+              .
+            </Text>
+            <Text style={paragraph}>
+              Finally, we've put together a{' '}
+              <Link
+                style={anchor}
+                href="https://stripe.com/docs/checklist/website"
+              >
+                quick checklist
+              </Link>{' '}
+              to ensure your website conforms to card network standards.
+            </Text>
+            <Text style={paragraph}>
+              We'll be here to help you with any step along the way. You can
+              find answers to most questions and get in touch with us on our{' '}
+              <Link style={anchor} href="https://support.stripe.com/">
+                support site
+              </Link>
+              .
+            </Text>
+            <Text style={paragraph}>— The Stripe team</Text>
+            <Hr style={hr} />
+            <Text style={footer}>
+              Stripe, 354 Oyster Point Blvd, South San Francisco, CA 94080
+            </Text>
+          </Section>
+        </Container>
+      </Section>
     </Html>
   );
 }
