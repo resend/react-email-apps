@@ -1,4 +1,4 @@
-import { Heading } from 'design-system';
+import { Heading, Text } from 'design-system';
 import { Example } from '../../components/example';
 import { Footer } from '../../components/footer';
 import { Topbar } from '../../components/topbar';
@@ -26,19 +26,19 @@ const items = [
 export default function Examples() {
   return (
     <>
-      <div className="h-screen-ios relative z-20 mx-auto flex h-screen max-w-7xl flex-col px-4">
+      <div className="h-screen-ios relative z-20 mx-auto flex max-w-7xl flex-col px-4">
         <Topbar />
-        <div className="relative mx-auto flex max-w-3xl flex-col justify-center">
-          <div className="max-w-[745px] text-center">
-            <Heading size="9" className="relative mb-2 text-white">
+        <div className="relative mx-auto flex max-w-3xl flex-col justify-center py-10">
+          <div className="mb-12 max-w-[745px] text-center">
+            <Heading size="8" className="mb-2 text-white">
               Examples
             </Heading>
-            <Heading size="4" className="text-slate-11 relative mb-8">
+            <Text size="4" className="text-slate-11">
               Open source templates built with React Email
-            </Heading>
+            </Text>
           </div>
 
-          <div className="mt-10 columns-1 gap-8 sm:columns-2">
+          <div className="grid grid-cols-2 gap-8">
             {items.map((item) => (
               <Example key={item.id} {...item} />
             ))}
