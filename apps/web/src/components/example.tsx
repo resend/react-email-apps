@@ -1,8 +1,8 @@
-/* eslint-disable react/jsx-no-target-blank */
 import * as React from 'react';
 import classnames from 'classnames';
 import Image from 'next/image';
-import { Text } from 'design-system';
+import { Heading } from 'design-system';
+import Link from 'next/link';
 
 type ExampleElement = React.ElementRef<'a'>;
 
@@ -16,27 +16,32 @@ const GITHUB_URL =
   'https://github.com/zenorocha/react-email-apps/blob/main/apps/demo';
 
 export const Example = React.forwardRef<ExampleElement, Readonly<ExampleProps>>(
-  ({ className, ...props }, forwardedRef) => (
-    <a
+  ({ className, id, name, ...props }, forwardedRef) => (
+    <Link
       ref={forwardedRef}
-      href={`${GITHUB_URL}/${props.id}.tsx`}
-      target="_blank"
       className={classnames(
-        'bg-gradient hover:bg-gradientHover focus:bg-gradientHover mb-8 flex w-full flex-col rounded-md border border-[#34343A] backdrop-blur-[20px] focus:outline-none focus:ring-2 focus:ring-white/20',
+        'bg-gradient border-slate-6 flex w-full flex-col rounded-md border backdrop-blur-[20px] focus:outline-none focus:ring-2',
+        'hover:bg-gradientHover',
+        'focus:bg-gradientHover focus:ring-white/20',
         className,
       )}
+      href={`${GITHUB_URL}/${id}.tsx`}
+      target="_blank"
+      {...props}
     >
       <Image
-        src={`/static/examples/${props.id}.png`}
-        alt={props.name}
+        src={`/static/examples/${id}.png`}
+        alt={name}
         className="rounded-t-md"
         width="450"
         height="300"
       />
-      <Text className="p-4" color="white" size="3">
-        {props.name}
-      </Text>
-    </a>
+      <div className="p-4">
+        <Heading size="2" weight="medium">
+          {name}
+        </Heading>
+      </div>
+    </Link>
   ),
 );
 
