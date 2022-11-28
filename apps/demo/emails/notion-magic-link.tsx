@@ -1,4 +1,3 @@
-import { Code } from '@react-email/code';
 import { Container } from '@react-email/container';
 import { Head } from '@react-email/head';
 import { Heading } from '@react-email/heading';
@@ -17,7 +16,9 @@ export default function Email() {
       <Preview>Log in with this magic link</Preview>
       <Section>
         <Container style={container}>
-          <Heading as="h1" style={h1}>Login</Heading>
+          <Heading as="h1" style={h1}>
+            Login
+          </Heading>
           <Link
             href="https://notion.so"
             target="_blank"
@@ -32,9 +33,7 @@ export default function Email() {
           <Text style={{ ...text, marginBottom: '14px' }}>
             Or, copy and paste this temporary login code:
           </Text>
-          <code style={code}>
-            sparo-ndigo-amurt-secan
-          </code>
+          <code style={code}>sparo-ndigo-amurt-secan</code>
           <Text
             style={{
               ...text,
@@ -43,8 +42,7 @@ export default function Email() {
               marginBottom: '16px',
             }}
           >
-            If you didn&apos;t try to login, you can safely ignore
-            this email.
+            If you didn&apos;t try to login, you can safely ignore this email.
           </Text>
           <Text
             style={{
@@ -54,8 +52,8 @@ export default function Email() {
               marginBottom: '38px',
             }}
           >
-            Hint: You can set a permanent password in Settings &
-            members → My account.
+            Hint: You can set a permanent password in Settings & members → My
+            account.
           </Text>
           <Img
             src="https://assets.react.email/demo/notion-logo.png"
