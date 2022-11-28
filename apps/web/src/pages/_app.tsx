@@ -24,6 +24,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         </title>
         <link rel="icon" href="/static/favicon.ico" sizes="any" />
         <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
 
         <meta property="og:title" content={`${title} — ${description}`} />
         <meta property="og:description" content={`${title} — ${description}`} />
