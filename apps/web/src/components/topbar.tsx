@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Logo } from 'design-system';
+import { Badge, Logo } from 'design-system';
 import classnames from 'classnames';
 import Link from 'next/link';
 import { Menu } from '../components/menu';
@@ -19,9 +19,12 @@ export const Topbar = React.forwardRef<TopbarElement, Readonly<TopbarProps>>(
       )}
       {...props}
     >
-      <Link href="/">
-        <Logo />
-      </Link>
+      <div className="flex items-center gap-3">
+        <Link href="/">
+          <Logo />
+        </Link>
+        <Badge>Beta</Badge>
+      </div>
       <Menu />
     </header>
   ),
