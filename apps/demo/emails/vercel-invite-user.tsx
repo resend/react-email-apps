@@ -1,4 +1,3 @@
-import { Avatar, AvatarImage } from '@react-email/avatar';
 import { Button } from '@react-email/button';
 import { Container } from '@react-email/container';
 import { Head } from '@react-email/head';
@@ -38,7 +37,7 @@ export default function Email() {
                     <td align="center">
                       <div style={{ marginTop: '32px' }}>
                         <Img
-                          src="https://demo.react.email/static/images/vercel-logo.png"
+                          src="https://assets.react.email/demo/vercel-logo.png"
                           width="40"
                           height="37"
                           alt="Vercel"
@@ -77,32 +76,28 @@ export default function Email() {
                       >
                         <tr>
                           <td style={center} align="left" valign="middle">
-                            <Avatar>
-                              <AvatarImage
-                                style={avatar}
-                                src="https://vercel.com/api/www/avatar/?u=zenorocha&amp;s=240&amp;format=png"
-                                width="64"
-                                height="64"
-                              />
-                            </Avatar>
+                            <Img
+                              style={avatar}
+                              src="https://vercel.com/api/www/avatar/?u=zenorocha&amp;s=240&amp;format=png"
+                              width="64"
+                              height="64"
+                            />
                           </td>
                           <td style={center} align="left" valign="middle">
                             <Img
-                              src="https://demo.react.email/static/images/vercel-arrow.png"
+                              src="https://assets.react.email/demo/vercel-arrow.png"
                               width="12"
                               height="9"
                               alt="invited you to"
                             />
                           </td>
                           <td style={center} align="left" valign="middle">
-                            <Avatar>
-                              <AvatarImage
-                                style={avatar}
-                                src="https://vercel.com/api/www/avatar/?teamId=team_3e17ZatpKJ1imLQdTyrLeBoX&amp;s=240&amp;format=png"
-                                width="64"
-                                height="64"
-                              />
-                            </Avatar>
+                            <Img
+                              style={avatar}
+                              src="https://vercel.com/api/www/avatar/?teamId=team_3e17ZatpKJ1imLQdTyrLeBoX&amp;s=240&amp;format=png"
+                              width="64"
+                              height="64"
+                            />
                           </td>
                         </tr>
                       </table>
