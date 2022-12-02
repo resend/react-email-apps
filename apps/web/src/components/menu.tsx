@@ -18,6 +18,9 @@ export const Menu = React.forwardRef<MenuElement, Readonly<MenuProps>>(
       {...props}
     >
       <ul className="flex gap-2">
+        <MenuItem className="w-full px-2" href="/docs">
+          Docs
+        </MenuItem>
         <MenuItem className="w-full px-2" href="/examples">
           Examples
         </MenuItem>
@@ -85,7 +88,7 @@ const MenuItem = React.forwardRef<MenuItemElement, Readonly<MenuItemProps>>(
     >
       <Link
         className={classnames(
-          'text-slate-11 inline-flex h-8 w-8 items-center justify-center rounded-md text-sm',
+          'text-slate-11 py-2 items-center justify-center rounded-md text-sm',
           'hover:text-slate-12 hover:bg-white/10',
           'outline-none focus:bg-white/10 focus:ring-2 focus:ring-white/20',
           className,
