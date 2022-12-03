@@ -3,6 +3,15 @@ module.exports = {
   experimental: {
     transpilePackages: ['design-system'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/discord',
+        destination: 'https://discord.com/invite/n2pWEjjNnD',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {
@@ -20,15 +29,6 @@ module.exports = {
               'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
           },
         ],
-      },
-    ];
-  },
-  async redirects() {
-    return [
-      {
-        source: '/discord',
-        destination: 'https://discord.com/invite/n2pWEjjNnD',
-        permanent: false,
       },
     ];
   },

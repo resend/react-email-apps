@@ -26,8 +26,8 @@ export default function Email() {
             />
             <Hr style={hr} />
             <Text style={paragraph}>
-              Thanks for submitting your account information. You're now
-              ready to make live transactions with Stripe!
+              Thanks for submitting your account information. You're now ready
+              to make live transactions with Stripe!
             </Text>
             <Text style={paragraph}>
               You can view your payments and a variety of other information
@@ -50,17 +50,17 @@ export default function Email() {
               handy.
             </Text>
             <Text style={paragraph}>
-              Once you're ready to start accepting payments, you'll just
-              need to use your live{' '}
+              Once you're ready to start accepting payments, you'll just need to
+              use your live{' '}
               <Link
                 style={anchor}
                 href="https://dashboard.stripe.com/login?redirect=%2Fapikeys"
               >
                 API keys
               </Link>{' '}
-              instead of your test API keys. Your account can simultaneously
-              be used for both test and live requests, so you can continue
-              testing while accepting live payments. Check out our{' '}
+              instead of your test API keys. Your account can simultaneously be
+              used for both test and live requests, so you can continue testing
+              while accepting live payments. Check out our{' '}
               <Link style={anchor} href="https://stripe.com/docs/dashboard">
                 tutorial about account basics
               </Link>

@@ -1,6 +1,5 @@
 import { Container } from '@react-email/container';
 import { Head } from '@react-email/head';
-import { Heading } from '@react-email/heading';
 import { Html } from '@react-email/html';
 import { Img } from '@react-email/img';
 import { Link } from '@react-email/link';
@@ -14,11 +13,9 @@ export default function Email() {
     <Html>
       <Head />
       <Preview>Log in with this magic link</Preview>
-      <Section>
+      <Section style={main}>
         <Container style={container}>
-          <Heading as="h1" style={h1}>
-            Login
-          </Heading>
+          <Text style={h1}>Login</Text>
           <Link
             href="https://notion.so"
             target="_blank"
@@ -79,6 +76,10 @@ export default function Email() {
   );
 }
 
+const main = {
+  backgroundColor: '#ffffff',
+};
+
 const container = {
   paddingLeft: '12px',
   paddingRight: '12px',
@@ -91,7 +92,7 @@ const h1 = {
     "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
   fontSize: '24px',
   fontWeight: 'bold',
-  margin: '123px 0 44px',
+  margin: '40px 0',
   padding: '0',
 };
 

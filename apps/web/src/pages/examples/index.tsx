@@ -2,6 +2,7 @@ import { Heading, Text } from 'design-system';
 import { Example } from '../../components/example';
 import { Footer } from '../../components/footer';
 import { Topbar } from '../../components/topbar';
+import Head from 'next/head';
 import Image from 'next/image';
 
 const items = [
@@ -24,8 +25,16 @@ const items = [
 ];
 
 export default function Examples() {
+  const title = 'Examples — React Email';
+  const description = 'Open source templates built with React Email';
+
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+      </Head>
       <div className="h-screen-ios relative z-20 mx-auto flex max-w-7xl flex-col px-4">
         <Topbar />
         <div className="relative mx-auto flex max-w-3xl flex-col justify-center py-10">
@@ -34,7 +43,7 @@ export default function Examples() {
               Examples
             </Heading>
             <Text size="4" className="text-slate-11">
-              Open source templates built with React Email
+              {description}
             </Text>
           </div>
 
