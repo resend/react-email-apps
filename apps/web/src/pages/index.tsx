@@ -41,7 +41,7 @@ export default function Web() {
               </Link>
             </Button>
             <Code language="bash" className="hidden max-w-max md:!inline-flex">
-              npm install @react-email/button
+              npx create-email@latest
             </Code>
           </div>
         </div>
