@@ -13,7 +13,7 @@ interface ExampleProps {
 }
 
 const GITHUB_URL =
-  'https://github.com/zenorocha/react-email-apps/blob/main/apps/demo/emails';
+  'https://demo.react.email/preview';
 
 export const Example = React.forwardRef<ExampleElement, Readonly<ExampleProps>>(
   ({ className, id, name, ...props }, forwardedRef) => (
