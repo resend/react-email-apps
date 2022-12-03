@@ -12,6 +12,18 @@ module.exports = {
       },
     ]
   },
+  async rewrites() {
+    return [
+      {
+        source: '/docs',
+        destination: 'https://react-email.mintlify.dev/docs'
+      },
+      {
+        source: '/docs/:match*',
+        destination: 'https://react-email.mintlify.dev/docs/:match*'
+      }
+    ]
+  },
   async headers() {
     return [
       {
