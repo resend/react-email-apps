@@ -88,7 +88,7 @@ const MenuItem = React.forwardRef<MenuItemElement, Readonly<MenuItemProps>>(
     >
       <Link
         className={classnames(
-          'text-slate-11 py-2 items-center justify-center rounded-md text-sm',
+          'text-slate-11 items-center justify-center rounded-md py-2 text-sm',
           'hover:text-slate-12 hover:bg-white/10',
           'outline-none focus:bg-white/10 focus:ring-2 focus:ring-white/20',
           className,

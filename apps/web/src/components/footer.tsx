@@ -19,31 +19,37 @@ export const Footer = React.forwardRef<FooterElement, Readonly<RootProps>>(
     >
       <Text className="inline-flex items-center gap-2">
         Created by{' '}
-        <Link passHref legacyBehavior href="https://twitter.com/bukinoshita">
-          <Anchor appearance="white" className="inline-flex items-center gap-2">
-            <Image
-              className="border-slate-7 inline-block rounded-full border"
-              src="/static/bu.jpg"
-              alt={''}
-              width="20"
-              height="20"
-            />
-            Bu Kinoshita
-          </Anchor>
-        </Link>{' '}
+        <Anchor
+          target="_blank"
+          href="https://twitter.com/bukinoshita"
+          appearance="white"
+          className="inline-flex items-center gap-2"
+        >
+          <Image
+            className="border-slate-7 inline-block rounded-full border"
+            src="/static/bu.jpg"
+            alt={''}
+            width="20"
+            height="20"
+          />
+          Bu Kinoshita
+        </Anchor>{' '}
         and{' '}
-        <Link passHref legacyBehavior href="https://twitter.com/zenorocha">
-          <Anchor appearance="white" className="inline-flex items-center gap-2">
-            <Image
-              className="border-slate-7 inline-block rounded-full border"
-              src="/static/zeno.jpg"
-              alt={''}
-              width="20"
-              height="20"
-            />
-            Zeno Rocha
-          </Anchor>
-        </Link>
+        <Anchor
+          target="_blank"
+          href="https://twitter.com/zenorocha"
+          appearance="white"
+          className="inline-flex items-center gap-2"
+        >
+          <Image
+            className="border-slate-7 inline-block rounded-full border"
+            src="/static/zeno.jpg"
+            alt={''}
+            width="20"
+            height="20"
+          />
+          Zeno Rocha
+        </Anchor>
       </Text>
     </footer>
   ),
