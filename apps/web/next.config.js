@@ -3,6 +3,15 @@ module.exports = {
   experimental: {
     transpilePackages: ['design-system'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/discord',
+        destination: 'https://discord.com/invite/n2pWEjjNnD',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {

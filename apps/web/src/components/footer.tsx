@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import classnames from 'classnames';
-import Link from 'next/link';
 import { Anchor, Text } from 'design-system';
 
 type FooterElement = React.ElementRef<'footer'>;

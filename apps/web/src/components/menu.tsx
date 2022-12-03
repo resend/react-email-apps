@@ -8,7 +8,7 @@ type RootProps = React.ComponentPropsWithoutRef<'nav'>;
 interface MenuProps extends RootProps {}
 
 const GITHUB_URL = 'https://github.com/zenorocha/react-email';
-const DISCORD_URL = 'https://discord.com/invite/n2pWEjjNnD';
+const DISCORD_URL = '/discord';
 
 export const Menu = React.forwardRef<MenuElement, Readonly<MenuProps>>(
   ({ className, ...props }, forwardedRef) => (
