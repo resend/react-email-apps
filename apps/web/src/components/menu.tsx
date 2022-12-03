@@ -30,7 +30,7 @@ export const Menu = React.forwardRef<MenuElement, Readonly<MenuProps>>(
         className="bg-slate-6 mx-2 hidden h-5 w-px sm:!inline-block"
       />
       <ul className="flex gap-2">
-        <MenuItem href={GITHUB_URL}>
+        <MenuItem href={GITHUB_URL} className="w-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -43,7 +43,7 @@ export const Menu = React.forwardRef<MenuElement, Readonly<MenuProps>>(
             />
           </svg>
         </MenuItem>
-        <MenuItem href={DISCORD_URL}>
+        <MenuItem href={DISCORD_URL} className="w-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 127.14 96.36"
@@ -88,7 +88,7 @@ const MenuItem = React.forwardRef<MenuItemElement, Readonly<MenuItemProps>>(
     >
       <Link
         className={classnames(
-          'text-slate-11 items-center justify-center rounded-md py-2 text-sm',
+          'text-slate-11 inline-flex items-center justify-center rounded-md h-8 text-sm',
           'hover:text-slate-12 hover:bg-white/10',
           'outline-none focus:bg-white/10 focus:ring-2 focus:ring-white/20',
           className,
