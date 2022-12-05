@@ -12,8 +12,7 @@ interface ExampleProps {
   className?: string;
 }
 
-const GITHUB_URL =
-  'https://demo.react.email/preview';
+const GITHUB_URL = 'https://demo.react.email/preview';
 
 export const Example = React.forwardRef<ExampleElement, Readonly<ExampleProps>>(
   ({ className, id, name, ...props }, forwardedRef) => (
