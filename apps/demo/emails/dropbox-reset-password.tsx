@@ -40,13 +40,13 @@ export default function Email() {
                 </Button>
                 <br />
                 <Text style={text}>
-                  If you don't want to change your password or didn't request
-                  this, just ignore and delete this message.
+                  If you don&apos;t want to change your password or didn&apos;t
+                  request this, just ignore and delete this message.
                 </Text>
                 <br />
                 <Text style={text}>
-                  To keep your account secure, please don't forward this email
-                  to anyone. See our Help Center for{' '}
+                  To keep your account secure, please don&apos;t forward this
+                  email to anyone. See our Help Center for{' '}
                   <Link
                     style={anchor}
                     href="https://www.dropbox.com/l/AAAqid-_okKjW2byigTjZo7j4cPwJwLxdqY/help/365"
