@@ -22,9 +22,9 @@ const Email = () => {
         <Text style={body}><b>1. What do you hate the most about email development?</b></Text>
         <Text style={body}><em>"Writing tables inside tables inside tables. My goodness, I hate it so much."</em></Text>
         <Text style={body}><b>2. What email service provider do you use?</b></Text>
-        <Img src="https://assets.react.email/survey-email-provider.png" alt="SendGrid: 52.3% / AWS SES: 35.5% / Mailchimp: 29.4%" width="532" height="232" />
+        <Img src="https://assets.react.email/campaigns/survey-email-provider.png" alt="SendGrid: 52.3% / AWS SES: 35.5% / Mailchimp: 29.4%" width="532" height="232" />
         <Text style={body}><b>3. How do you develop email templates?</b></Text>
-        <Img src="https://assets.react.email/survey-email-dev.png" alt="Pure HTML/CSS: 66.3% / MJML: 17.8% / Drag-n-drop: 12.9%" width="532" height="223" />
+        <Img src="https://assets.react.email/campaigns/survey-email-dev.png" alt="Pure HTML/CSS: 66.3% / MJML: 17.8% / Drag-n-drop: 12.9%" width="532" height="223" />
         <Text style={body}>A lot of people also mentioned testing as one of the biggest pain points:</Text>
         <Text style={body}><em>"Styling is hard, testing is even harder."</em></Text>
         <Text style={body}>We're working on something to help with this right now, and we plan to share an update next week :)</Text>
