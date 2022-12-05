@@ -16,11 +16,11 @@ module.exports = {
     return [
       {
         source: '/docs',
-        destination: 'https://react-email.mintlify.dev/docs'
+        destination: 'https://react-email.mintlify.com/docs'
       },
       {
         source: '/docs/:match*',
-        destination: 'https://react-email.mintlify.dev/docs/:match*'
+        destination: 'https://react-email.mintlify.com/docs/:match*'
       }
     ]
   },
