@@ -19,28 +19,63 @@ const Email = () => {
       <Section style={main}>
         <Text style={body}>Hey, it's Zeno Rocha.</Text>
         <Text style={body}>I have some big news to share...</Text>
-        <Text style={body}>Today we're launching the React Email documentation: <Link href={docsLink}>react.email/docs</Link> 🎉</Text>
+        <Text style={body}>
+          Today we're launching the React Email documentation:{' '}
+          <Link href={docsLink}>react.email/docs</Link> 🎉
+        </Text>
         <Link href={docsLink}>
-          <Img src="https://assets.react.email/campaigns/launch-docs.png" alt="React Email Docs" width="600" height="371" />
+          <Img
+            src="https://assets.react.email/campaigns/launch-docs.png"
+            alt="React Email Docs"
+            width="600"
+            height="371"
+          />
         </Link>
-        <Text style={body}>We spent a lot of time thinking about what's the best way to get started, and we came up with something similar to Create React App.</Text>
+        <Text style={body}>
+          We spent a lot of time thinking about what's the best way to get
+          started, and we came up with something similar to Create React App.
+        </Text>
         <Text style={body}>To start using React Email, you can run:</Text>
-        <Text><code style={code}>npx create-email@latest</code></Text>
-        <Text style={body}>This will generate a folder with a few pre-built templates. After you install the dependencies and run this app locally, this is what you'll see: <Link href={demoLink}>demo.react.email</Link></Text>
+        <Text>
+          <code style={code}>npx create-email@latest</code>
+        </Text>
+        <Text style={body}>
+          This will generate a folder with a few pre-built templates. After you
+          install the dependencies and run this app locally, this is what you'll
+          see: <Link href={demoLink}>demo.react.email</Link>
+        </Text>
         <Link href={demoLink}>
-          <Img src="https://assets.react.email/campaigns/launch-demo.png" alt="React Email Local Server" width="600" height="371" />
+          <Img
+            src="https://assets.react.email/campaigns/launch-demo.png"
+            alt="React Email Local Server"
+            width="600"
+            height="371"
+          />
         </Link>
-        <Text style={body}>We built this preview server with live reload for quick development. That way, you don't need to keep sending real emails to test your templates. Everything happens in the browser.</Text>
-        <Text style={body}>Give it a try and let me know what you think :)</Text>
+        <Text style={body}>
+          We built this preview server with live reload for quick development.
+          That way, you don't need to keep sending real emails to test your
+          templates. Everything happens in the browser.
+        </Text>
+        <Text style={body}>
+          Give it a try and let me know what you think :)
+        </Text>
         <Text style={body}>Happy coding!</Text>
-        <Text style={body}>P.S.: Last Saturday, I gave a talk about all this at React Conf Brazil. If you speak pt-br, you can <Link href="https://youtu.be/rQFupuVA5XQ">watch it on YouTube</Link>. 🇧🇷</Text>
+        <Text style={body}>
+          P.S.: Last Saturday, I gave a talk about all this at React Conf
+          Brazil. If you speak pt-br, you can{' '}
+          <Link href="https://youtu.be/rQFupuVA5XQ">watch it on YouTube</Link>.
+          🇧🇷
+        </Text>
         <Hr />
-        <Text style={footer}>You are receiving this email because you opted in at react.email</Text>
+        <Text style={footer}>
+          You are receiving this email because you opted in at react.email
+        </Text>
         <Text style={footer}>185 Royal Way - Upland, CA 91786</Text>
       </Section>
     </Html>
   );
-}
+};
 
 const main = {
   backgroundColor: '#ffffff',
@@ -59,7 +94,6 @@ const code = {
   border: '1px solid #eee',
   color: '#333',
 };
-
 
 const footer = {
   color: '#898989',
