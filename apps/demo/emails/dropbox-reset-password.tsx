@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { Html } from '@react-email/html';
-import { Head } from '@react-email/head';
-import { Container } from '@react-email/container';
-import { Img } from '@react-email/img';
-import { Section } from '@react-email/section';
-import { Text } from '@react-email/text';
 import { Button } from '@react-email/button';
+import { Container } from '@react-email/container';
+import { Head } from '@react-email/head';
+import { Html } from '@react-email/html';
+import { Img } from '@react-email/img';
 import { Link } from '@react-email/link';
 import { Preview } from '@react-email/preview';
+import { Section } from '@react-email/section';
+import { Text } from '@react-email/text';
+import * as React from 'react';
 
 export default function Email() {
   return (
@@ -17,49 +17,33 @@ export default function Email() {
       <Section style={main}>
         <Container style={container}>
           <Img
-            src="https://cfl.dropboxstatic.com/static/images/emails/glyph_116_98_m1.png"
+            src="https://assets.react.email/demo/dropbox.png"
             width="40"
+            height="33"
             alt="Dropbox"
           />
-          <table border={0} cellPadding="0" cellSpacing="10">
-            <tr>
-              <td>
-                <br />
-                <Text style={text}>Hi Zeno,</Text>
-                <br />
-                <Text style={text}>
-                  Someone recently requested a password change for your Dropbox
-                  account. If this was you, you can set a new password here:
-                </Text>
-                <br />
-                <Button
-                  style={button}
-                  href="https://www.dropbox.com/l/AAD-jqnfHjlJUO9hMoWdydqe3u594O5FMiE/forgot_finish"
-                >
-                  Reset password
-                </Button>
-                <br />
-                <Text style={text}>
-                  If you don&apos;t want to change your password or didn&apos;t
-                  request this, just ignore and delete this message.
-                </Text>
-                <br />
-                <Text style={text}>
-                  To keep your account secure, please don&apos;t forward this
-                  email to anyone. See our Help Center for{' '}
-                  <Link
-                    style={anchor}
-                    href="https://www.dropbox.com/l/AAAqid-_okKjW2byigTjZo7j4cPwJwLxdqY/help/365"
-                  >
-                    more security tips
-                  </Link>
-                  .
-                </Text>
-                <br />
-                <Text style={text}>Happy Dropboxing!</Text>
-              </td>
-            </tr>
-          </table>
+          <Section>
+            <Text style={text}>Hi Zeno,</Text>
+            <Text style={text}>
+              Someone recently requested a password change for your Dropbox
+              account. If this was you, you can set a new password here:
+            </Text>
+            <Button style={button} href="https://dropbox.com">
+              Reset password
+            </Button>
+            <Text style={text}>
+              If you don&apos;t want to change your password or didn&apos;t
+              request this, just ignore and delete this message.
+            </Text>
+            <Text style={text}>
+              To keep your account secure, please don&apos;t forward this email
+              to anyone. See our Help Center for{' '}
+              <Link style={anchor} href="https://dropbox.com">
+                more security tips.
+              </Link>
+            </Text>
+            <Text style={text}>Happy Dropboxing!</Text>
+          </Section>
         </Container>
       </Section>
     </Html>
