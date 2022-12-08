@@ -24,7 +24,7 @@ export const Example = React.forwardRef<ExampleElement, Readonly<ExampleProps>>(
         'focus:bg-gradientHover focus:ring-white/20',
         className,
       )}
-      href={`${GITHUB_URL}/${id}.tsx`}
+      href={`${GITHUB_URL}/${id}`}
       target="_blank"
       {...props}
     >
