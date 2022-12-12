@@ -47,11 +47,11 @@ export default function Email() {
             While it’s too late to write a review of your own, you can send your
             feedback to Alex using your Airbnb message thread.
           </Text>
-          <div style={{ padding: '16px 0 24px 0' }}>
+          <Section style={{ padding: '16px 0 20px' }}>
             <Button pY={19} style={button} href="https://www.airbnb.com/">
               Send My Feedback
             </Button>
-          </div>
+          </Section>
           <Hr style={hr} />
           <Text style={{ ...paragraph, fontWeight: '700' }}>
             Commom questions
