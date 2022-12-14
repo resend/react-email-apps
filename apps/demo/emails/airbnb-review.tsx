@@ -19,7 +19,8 @@ export default function Email() {
         <Container style={container}>
           <Img
             src="https://assets.react.email/demo/airbnb-logo.png"
-            height="80"
+            width="96"
+            height="30"
             alt="Airbnb"
           />
           <Section>
@@ -27,7 +28,7 @@ export default function Email() {
               src="https://assets.react.email/demo/airbnb-review-user.jpg"
               width="96"
               height="96"
-              alt=""
+              alt="Alex"
               style={userImage}
             />
           </Section>
@@ -38,7 +39,6 @@ export default function Email() {
             He’s welcome back anytime and would easily recommend him to any
             host!”
           </Text>
-          <br />
           <Text style={paragraph}>
             Now that the review period is over, we’ve posted Alex’s review to
             your Airbnb profile.
@@ -48,7 +48,7 @@ export default function Email() {
             feedback to Alex using your Airbnb message thread.
           </Text>
           <Section style={{ padding: '16px 0 20px' }}>
-            <Button pY={19} style={button} href="https://www.airbnb.com/">
+            <Button pY={19} style={button} href="https://airbnb.com/">
               Send My Feedback
             </Button>
           </Section>
@@ -56,22 +56,26 @@ export default function Email() {
           <Text style={{ ...paragraph, fontWeight: '700' }}>
             Commom questions
           </Text>
-          <Link href="https://www.airbnb.com/help/article/13" style={link}>
-            How do reviews work?
-          </Link>
-          <br />
-          <Link href="https://www.airbnb.com/help/article/1257" style={link}>
-            How do star ratings work?
-          </Link>
-          <br />
-          <Link href="https://www.airbnb.com/help/article/995" style={link}>
-            Can I leave a review after 14 days?
-          </Link>
+          <Text>
+            <Link href="https://airbnb.com/help/article/13" style={link}>
+              How do reviews work?
+            </Link>
+          </Text>
+          <Text>
+            <Link href="https://airbnb.com/help/article/1257" style={link}>
+              How do star ratings work?
+            </Link>
+          </Text>
+          <Text>
+            <Link href="https://airbnb.com/help/article/995" style={link}>
+              Can I leave a review after 14 days?
+            </Link>
+          </Text>
           <Hr style={hr} />
           <Text style={footer}>
             Airbnb, Inc., 888 Brannan St, San Francisco, CA 94103
           </Text>
-          <Link href="https://www.airbnb.com/" style={reportLink}>
+          <Link href="https://airbnb.com" style={reportLink}>
             Report unsafe behavior
           </Link>
         </Container>
