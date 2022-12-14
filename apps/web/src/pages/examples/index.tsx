@@ -1,4 +1,4 @@
-import { Heading, Text } from 'design-system';
+import { Anchor, Heading, Text } from 'design-system';
 import { Example } from '../../components/example';
 import { Footer } from '../../components/footer';
 import { Topbar } from '../../components/topbar';
@@ -7,20 +7,39 @@ import Image from 'next/image';
 
 const items = [
   {
-    id: 'notion-magic-link',
-    name: 'Notion Magic Link',
+    id: 'airbnb-review',
+    name: 'Airbnb / Review',
+    author: 'joaom00',
   },
   {
-    id: 'plaid-verify-identity',
-    name: 'Plaid Verify Identity',
+    id: 'dropbox-reset-password',
+    name: 'Dropbox / Reset Password',
+    author: 'ribeiroevandro',
   },
   {
-    id: 'stripe-welcome',
-    name: 'Stripe Welcome',
+    id: 'koala-welcome',
+    name: 'Koala / Welcome',
+    author: 'nettofarah',
   },
   {
     id: 'vercel-invite-user',
-    name: 'Vercel Invite User',
+    name: 'Vercel / Invite User',
+    author: 'zenorocha',
+  },
+  {
+    id: 'stripe-welcome',
+    name: 'Stripe / Welcome',
+    author: 'zenorocha',
+  },
+  {
+    id: 'notion-magic-link',
+    name: 'Notion / Magic Link',
+    author: 'bukinoshita',
+  },
+  {
+    id: 'plaid-verify-identity',
+    name: 'Plaid / Verify Identity',
+    author: 'zenorocha',
   },
 ];
 
@@ -42,8 +61,27 @@ export default function Examples() {
             <Heading size="8" className="mb-2 text-white">
               Examples
             </Heading>
-            <Text size="4" className="text-slate-11">
-              {description}
+            <Text as="p" size="4" className="text-slate-11">
+              {description}.
+            </Text>
+            <Text as="p" size="4" className="text-slate-11">
+              Recreate an{' '}
+              <Anchor
+                target="_blank"
+                href="https://github.com/zenorocha/react-email/issues?q=is%3Aissue+is%3Aopen+label%3A%22app%3A+demo%22"
+                appearance="white"
+              >
+                existing email
+              </Anchor>{' '}
+              or submit a{' '}
+              <Anchor
+                target="_blank"
+                href="https://github.com/zenorocha/react-email-apps/tree/main/apps/demo/emails"
+                appearance="white"
+              >
+                pull request
+              </Anchor>{' '}
+              to add your template here.
             </Text>
           </div>
 

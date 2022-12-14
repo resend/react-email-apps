@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classnames from 'classnames';
 import Image from 'next/image';
-import { Heading } from 'design-system';
+import { Anchor, Text, Heading } from 'design-system';
 import Link from 'next/link';
 
 type ExampleElement = React.ElementRef<'a'>;
@@ -10,12 +10,13 @@ interface ExampleProps {
   id: string;
   name: string;
   className?: string;
+  author: string;
 }
 
 const GITHUB_URL = 'https://demo.react.email/preview';
 
 export const Example = React.forwardRef<ExampleElement, Readonly<ExampleProps>>(
-  ({ className, id, name, ...props }, forwardedRef) => (
+  ({ className, id, name, author, ...props }, forwardedRef) => (
     <Link
       ref={forwardedRef}
       className={classnames(
@@ -39,6 +40,16 @@ export const Example = React.forwardRef<ExampleElement, Readonly<ExampleProps>>(
         <Heading size="2" weight="medium">
           {name}
         </Heading>
+        <div className="mt-2 flex flex-row gap-2">
+          <img
+            src={`https://github.com/${author}.png`}
+            alt={author}
+            className="rounded-full"
+            width="24"
+            height="24"
+          />
+          <Text>{author}</Text>
+        </div>
       </div>
     </Link>
   ),
