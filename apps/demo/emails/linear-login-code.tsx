@@ -18,15 +18,15 @@ export default function Email() {
       <Section style={main}>
         <Container style={container}>
           <Img
-            src="https://static.linear.app/emails/assets/logo_v2_128.png"
+            src="https://assets.react.email/demo/linear-logo.png"
             width="42"
             height="42"
-            alt="Airbnb"
+            alt="Linear"
             style={logo}
           />
           <Text style={heading}>Your login code for Linear</Text>
-          <Section style={{ padding: '27px 0 27px' }}>
-            <Button pY={11} pX={23} style={button} href="https://airbnb.com/">
+          <Section style={buttonContainer}>
+            <Button pY={11} pX={23} style={button} href="https://linear.app">
               Login to Linear
             </Button>
           </Section>
@@ -39,7 +39,7 @@ export default function Email() {
             <code style={code}>tt226-5398x</code>
           </Section>
           <Hr style={hr} />
-          <Link href="https://linear.app/" style={reportLink}>
+          <Link href="https://linear.app" style={reportLink}>
             Linear
           </Link>
         </Container>
@@ -85,11 +85,8 @@ const paragraph = {
   color: '#3c4149',
 };
 
-const review = {
-  ...paragraph,
-  padding: '24px',
-  backgroundColor: '#f2f3f3',
-  borderRadius: '4px',
+const buttonContainer = {
+  padding: '27px 0 27px',
 };
 
 const button = {
