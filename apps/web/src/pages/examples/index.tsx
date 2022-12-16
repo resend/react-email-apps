@@ -7,6 +7,16 @@ import Image from 'next/image';
 
 const items = [
   {
+    id: 'linear-login-code',
+    name: 'Linear / Login Code',
+    author: 'Rychillie',
+  },
+  {
+    id: 'google-play-policy-update',
+    name: 'Google Play / Policy Update',
+    author: 'EmersonGarrido',
+  },
+  {
     id: 'airbnb-review',
     name: 'Airbnb / Review',
     author: 'joaom00',
