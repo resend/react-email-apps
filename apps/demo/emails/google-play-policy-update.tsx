@@ -22,12 +22,12 @@ export default function Email() {
                 src="https://assets.react.email/demo/google-play-header.png"
                 width="305"
                 height="28"
-                alt="Google Play developers header blue trasnparent"
+                alt="Google Play developers header blue transparent"
               />
             </Section>
             <Section style={sectionLogo}>
               <Img
-                src="https://assets.react.email/demo/google-play.png"
+                src="https://assets.react.email/demo/google-play-logo.png"
                 width="155"
                 height="31"
                 alt="Google Play"
@@ -101,7 +101,7 @@ export default function Email() {
                       <Img
                         width="28"
                         height="28"
-                        src="https://assets.react.email/demo/chatt.png"
+                        src="https://assets.react.email/demo/google-play-chat.png"
                       />
                     </Link>
                   </td>
@@ -110,7 +110,7 @@ export default function Email() {
                       <Img
                         width="28"
                         height="28"
-                        src="https://assets.react.email/demo/google-play-pl.png"
+                        src="https://assets.react.email/demo/google-play-icon.png"
                       />
                     </Link>
                   </td>
