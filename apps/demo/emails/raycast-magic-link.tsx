@@ -17,7 +17,7 @@ export default function Email() {
       <Section style={main}>
         <Container style={container}>
           <Img
-            src="https://assets.react.email/demo/raycast-logo.png"
+            src="/static/raycast-logo.png"
             width={48}
             height={48}
             alt="Raycast"
@@ -39,7 +39,7 @@ export default function Email() {
           </Text>
           <Hr style={hr} />
           <Img
-            src="https://assets.react.email/demo/raycast-logo.png"
+            src="/static/raycast-logo.png"
             width={32}
             height={32}
             style={{
@@ -68,7 +68,7 @@ const main = {
 const container = {
   margin: '0 auto',
   padding: '20px 25px 48px',
-  backgroundImage: 'url("https://assets.react.email/demo/raycast-bg.png")',
+  backgroundImage: 'url("/assets/raycast-bg.png")',
   backgroundPosition: 'bottom',
   backgroundRepeat: 'no-repeat, no-repeat',
 };

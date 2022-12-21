@@ -18,14 +18,14 @@ export default function Email() {
       <Section style={main}>
         <Container style={container}>
           <Img
-            src="https://assets.react.email/demo/airbnb-logo.png"
+            src="/static/airbnb-logo.png"
             width="96"
             height="30"
             alt="Airbnb"
           />
           <Section>
             <Img
-              src="https://assets.react.email/demo/airbnb-review-user.jpg"
+              src="/static/airbnb-review-user.jpg"
               width="96"
               height="96"
               alt="Alex"

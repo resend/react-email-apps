@@ -18,7 +18,7 @@ export default function Email() {
       <Section style={main}>
         <Container style={container}>
           <Img
-            src="https://assets.react.email/demo/linear-logo.png"
+            src="/static/linear-logo.png"
             width="42"
             height="42"
             alt="Linear"
