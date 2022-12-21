@@ -36,7 +36,7 @@ export default async function sendTest(
         .select('id', { count: 'exact' })
         .gte('created_at', formatISO(startDate))
         .lte('created_at', formatISO(endDate))
-        .eq('ip', ip)
+        .eq('ip', ip);
 
       if (error) {
         throw new Error(error.message);
@@ -44,7 +44,7 @@ export default async function sendTest(
 
       if (total && total <= 10) {
         return res.status(429).json({
-          error: 'You have reached the limit of 10 test emails per day'
+          error: 'You have reached the limit of 10 test emails per day',
         });
       }
 
