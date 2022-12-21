@@ -2,6 +2,7 @@ import { Resend } from 'resend';
 import { createClient } from '@supabase/supabase-js';
 import { NextApiRequest, NextApiResponse } from 'next';
 import is from '@sindresorhus/is';
+import { endOfToday, formatISO, startOfToday } from 'date-fns';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
@@ -26,6 +27,26 @@ export default async function sendTest(
       const city = req.headers['x-vercel-ip-city'];
       const country = req.headers['x-vercel-ip-country'];
       const country_region = req.headers['x-vercel-ip-country-region'];
+
+      const startDate = startOfToday();
+      const endDate = endOfToday();
+
+      const { count: total, error } = await supabase
+        .from('react_email_test_sends')
+        .select('id', { count: 'exact' })
+        .gte('created_at', formatISO(startDate))
+        .lte('created_at', formatISO(endDate))
+        .eq('ip', ip)
+
+      if (error) {
+        throw new Error(error.message);
+      }
+
+      if (total && total <= 10) {
+        return res.status(429).json({
+          error: 'You have reached the limit of 10 test emails per day'
+        });
+      }
 
       const savePromise = supabase.from('react_email_test_sends').insert([
         {
