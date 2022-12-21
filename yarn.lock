@@ -3145,14 +3145,6 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-klotty@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/klotty/-/klotty-0.8.0.tgz#32329105b3d0dfe2c3812d7aa184b41ec4d03fa1"
-  integrity sha512-9dPUiIoSetEsl7xduGqvsDxcgponzU6C8iHTph4aNGS9mrLp0jQtyrz3GmhpAnm54dito4sX2VHU/dbrRYDnvg==
-  dependencies:
-    "@react-email/render" "^0.0.1"
-    axios "0.27.2"
-
 language-subtag-registry@^0.3.20:
   version "0.3.22"
   resolved "https://registry.yarnpkg.com/language-subtag-registry/-/language-subtag-registry-0.3.22.tgz#2e1500861b2e457eba7e7ae86877cbd08fa1fd1d"
@@ -4098,6 +4090,14 @@ require-from-string@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
   integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
+
+resend@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/resend/-/resend-0.8.0.tgz#57308cbb0bfcd843afb7155ed9e34e8c967a6a46"
+  integrity sha512-IOUwOpiGDbVG+9TszuPZCvgeU4NVL4o2WqvLyG0J9Cbd4jTtm56GDLVDyunXyGy7e8VRBYWKKgUJEzVVM3IZ5g==
+  dependencies:
+    "@react-email/render" "^0.0.1"
+    axios "0.27.2"
 
 resolve-from@^4.0.0:
   version "4.0.0"
