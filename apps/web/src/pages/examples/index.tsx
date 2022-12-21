@@ -7,6 +7,16 @@ import Image from 'next/image';
 
 const items = [
   {
+    id: 'raycast-magic-link',
+    name: 'Raycast / Magic Link',
+    author: 'abhinandanwadwa',
+  },
+  {
+    id: 'yelp-recent-login',
+    name: 'Yelp / Recent Login',
+    author: 'EmersonGarrido',
+  },
+  {
     id: 'linear-login-code',
     name: 'Linear / Login Code',
     author: 'Rychillie',
