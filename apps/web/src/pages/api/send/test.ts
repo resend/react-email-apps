@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import is from '@sindresorhus/is';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const supabaseUrl = 'https://ahszndesjmltbfzmckge.supabase.co';
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
