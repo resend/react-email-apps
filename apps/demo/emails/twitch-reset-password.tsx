@@ -16,10 +16,7 @@ export default function Email() {
       <Section style={main}>
         <Container style={container}>
           <Section style={logo}>
-            <Img
-              width={114}
-              src="https://assets.react.email/demo/twitch-logo.png"
-            />
+            <Img width={114} src="/static/twitch-logo.png" />
           </Section>
           <div style={sectionsBorders}>
             <Section style={sectionBorder} />
@@ -67,8 +64,8 @@ export default function Email() {
 
         <Section style={footer}>
           <div style={iconsSocial}>
-            <Img src="https://assets.react.email/demo/twitch-icon-twitter.png" />
-            <Img src="https://assets.react.email/demo/twitch-icon-facebook.png" />
+            <Img src="/static/twitch-icon-twitter.png" />
+            <Img src="/static/twitch-icon-facebook.png" />
           </div>
           <Text style={{ textAlign: 'center', color: '#706a7b' }}>
             © 2022 Twitch, All Rights Reserved <br />

@@ -16,14 +16,11 @@ export default function Email() {
       <Section style={main}>
         <Container style={container}>
           <Section style={logo}>
-            <Img src="https://assets.react.email/demo/yelp-logo.png" />
+            <Img src="/static/yelp-logo.png" />
           </Section>
 
           <Section style={content}>
-            <Img
-              width={620}
-              src="https://assets.react.email/demo/yelp-header.png"
-            />
+            <Img width={620} src="/static/yelp-header.png" />
 
             <Section style={boxInfos}>
               <Section>
@@ -88,10 +85,7 @@ export default function Email() {
           </Section>
 
           <Section style={containerImageFooter}>
-            <Img
-              width={620}
-              src="https://assets.react.email/demo/yelp-footer.png"
-            />
+            <Img width={620} src="/static/yelp-footer.png" />
           </Section>
 
           <Text
