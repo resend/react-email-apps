@@ -42,7 +42,7 @@ const Email = () => {
           <b>2. What email service provider do you use?</b>
         </Text>
         <Img
-          src="https://assets.react.email/campaigns/survey-email-provider.png"
+          src="/static/survey-email-provider.png"
           alt="SendGrid: 52.3% / AWS SES: 35.5% / Mailchimp: 29.4%"
           width="532"
           height="232"
@@ -51,7 +51,7 @@ const Email = () => {
           <b>3. How do you develop email templates?</b>
         </Text>
         <Img
-          src="https://assets.react.email/campaigns/survey-email-dev.png"
+          src="/static/survey-email-dev.png"
           alt="Pure HTML/CSS: 66.3% / MJML: 17.8% / Drag-n-drop: 12.9%"
           width="532"
           height="223"

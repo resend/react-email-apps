@@ -25,7 +25,7 @@ const Email = () => {
         </Text>
         <Link href={docsLink}>
           <Img
-            src="https://assets.react.email/campaigns/launch-docs.png"
+            src="/static/launch-docs.png"
             alt="React Email Docs"
             width="600"
             height="371"
@@ -46,7 +46,7 @@ const Email = () => {
         </Text>
         <Link href={demoLink}>
           <Img
-            src="https://assets.react.email/campaigns/launch-demo.png"
+            src="/static/launch-demo.png"
             alt="React Email Local Server"
             width="600"
             height="371"

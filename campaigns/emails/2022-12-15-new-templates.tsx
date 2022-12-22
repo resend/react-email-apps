@@ -37,7 +37,7 @@ const Email = () => {
         </Text>
         <Link href="https://twitter.com/rauchg/status/1600151807707164672">
           <Img
-            src="https://assets.react.email/campaigns/new-templates-tweet.png"
+            src="/static/new-templates-tweet.png"
             alt="react.email looks fire emoji - Guillermo Rauch"
             width="400"
             height="473"
@@ -58,7 +58,7 @@ const Email = () => {
         </Text>
         <Link href={airbnbLink}>
           <Img
-            src="https://assets.react.email/campaigns/new-templates-airbnb.png"
+            src="/static/new-templates-airbnb.png"
             alt="Airbnb email template by @joaom00"
             width="600"
             height="386"
