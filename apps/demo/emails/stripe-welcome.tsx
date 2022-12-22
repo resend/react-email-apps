@@ -11,6 +11,8 @@ import { Text } from '@react-email/text';
 import * as React from 'react';
 
 export default function Email() {
+  const baseUrl = process.env.VERCEL_URL;
+
   return (
     <Html>
       <Head />
@@ -19,7 +21,7 @@ export default function Email() {
         <Container style={container}>
           <Section style={box}>
             <Img
-              src="/static/stripe-logo.png"
+              src={`${baseUrl}/static/stripe-logo.png`}
               width="49"
               height="21"
               alt="Stripe"
