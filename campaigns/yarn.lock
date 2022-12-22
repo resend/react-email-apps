@@ -1787,10 +1787,10 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-email@1.4.2-canary.3:
-  version "1.4.2-canary.3"
-  resolved "https://registry.yarnpkg.com/react-email/-/react-email-1.4.2-canary.3.tgz#7357c3beccaf699c385e54de00e62168f1b94498"
-  integrity sha512-NKhz8P4nbfkLv6fTHyFMqKPe6LbkCWw6Xvujvd08pYPnNjY0C6Tvp4FzVY+xPF2wtFg4beC7f9XPRQG/CN4ACw==
+react-email@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-email/-/react-email-1.5.0.tgz#1d33f616a5295b7d440950c7c4bfe35e44822253"
+  integrity sha512-KdChjRPF+KoijftXA2NDCtLf1NoqtyqU9rlVnlHbcr5ItxvEB5PfaEQCrFHKS49AOFHfwUw0FwQoVfpUmXCyzg==
   dependencies:
     "@commander-js/extra-typings" "9.4.1"
     "@react-email/render" "*"
