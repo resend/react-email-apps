@@ -1,11 +1,11 @@
 import { Head } from '@react-email/head';
-import { Hr } from '@react-email/hr';
 import { Html } from '@react-email/html';
 import { Img } from '@react-email/img';
 import { Link } from '@react-email/link';
 import { Preview } from '@react-email/preview';
 import { Section } from '@react-email/section';
 import { Text } from '@react-email/text';
+import Footer from './components/footer';
 import * as React from 'react';
 
 const Email = () => {
@@ -42,7 +42,7 @@ const Email = () => {
           <b>2. What email service provider do you use?</b>
         </Text>
         <Img
-          src="https://assets.react.email/campaigns/survey-email-provider.png"
+          src="/static/survey-email-provider.png"
           alt="SendGrid: 52.3% / AWS SES: 35.5% / Mailchimp: 29.4%"
           width="532"
           height="232"
@@ -51,7 +51,7 @@ const Email = () => {
           <b>3. How do you develop email templates?</b>
         </Text>
         <Img
-          src="https://assets.react.email/campaigns/survey-email-dev.png"
+          src="/static/survey-email-dev.png"
           alt="Pure HTML/CSS: 66.3% / MJML: 17.8% / Drag-n-drop: 12.9%"
           width="532"
           height="223"
@@ -68,11 +68,7 @@ const Email = () => {
           share an update next week :)
         </Text>
         <Text style={body}>Thanks again for the amazing support so far.</Text>
-        <Hr />
-        <Text style={footer}>
-          You are receiving this email because you opted in at react.email
-        </Text>
-        <Text style={footer}>185 Royal Way - Upland, CA 91786</Text>
+        <Footer />
       </Section>
     </Html>
   );
@@ -85,13 +81,6 @@ const main = {
 const body = {
   fontFamily:
     "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-};
-
-const footer = {
-  color: '#898989',
-  fontFamily:
-    "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  fontSize: '12px',
 };
 
 export default Email;
