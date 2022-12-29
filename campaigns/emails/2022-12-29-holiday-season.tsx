@@ -10,6 +10,7 @@ import * as React from 'react';
 
 const Email = () => {
   const tweetLink = 'https://twitter.com/github/status/1605866235119403009';
+  const changelogLink = 'https://react.email/docs/changelog';
   const airbnbLink = 'https://demo.react.email/preview/airbnb-review';
   const googlePlayLink = 'https://demo.react.email/preview/google-play-policy-update';
   const linearLink = 'https://demo.react.email/preview/linear-login-code';
@@ -45,7 +46,7 @@ const Email = () => {
           />
         </Link>
         <Text style={body}>
-          We're shipping tons of improvements and new features every week.
+          We're shipping tons of improvements and new features every week (<Link href={changelogLink}>see changelog</Link> for all the details).
         </Text>
         <Text style={body}>
           There's one that I'm particularly excited about: you can now <strong>send real test emails</strong> right from React Email. To try this, you can go to the <Link href={airbnbLink}>demo app</Link> and click on the "Send" button in the top right corner.
