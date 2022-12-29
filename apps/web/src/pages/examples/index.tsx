@@ -106,7 +106,7 @@ export default function Examples() {
               or submit a{' '}
               <Anchor
                 target="_blank"
-                href="https://github.com/zenorocha/react-email-apps/tree/main/apps/demo/emails"
+                href="https://github.com/zenorocha/react-email/tree/main/apps/demo/emails"
                 appearance="white"
               >
                 pull request
