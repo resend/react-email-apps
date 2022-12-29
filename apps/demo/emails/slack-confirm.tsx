@@ -15,7 +15,7 @@ export default function Email() {
       <Preview>Confirm your email address</Preview>
       <Section style={main}>
         <Container style={container}>
-          <Section style={{ marginTop: '32px' }}>
+          <Section style={logoContainer}>
             <Img
               src="/static/slack-logo.png"
               width="120"
@@ -108,15 +108,14 @@ export default function Email() {
 
 const footerText = {
   fontSize: '12px',
-  opacity: '0.5',
-  color: 'rgb(105, 105, 105)',
+  color: '#b7b7b7',
   lineHeight: '15px',
   textAlign: 'left' as const,
   marginBottom: '50px'
 }
 
 const footerLink = {
-  color: '#1d1c1d',
+  color: '#b7b7b7',
   textDecoration: 'underline'
 }
 
@@ -141,6 +140,10 @@ const main = {
 const container = {
   maxWidth: '600px',
   margin: '0 auto'
+};
+
+const logoContainer = {
+  marginTop: '32px'
 };
 
 const h1 = {
