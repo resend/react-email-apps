@@ -7,6 +7,16 @@ import Image from 'next/image';
 
 const items = [
   {
+    id: 'slack-confirm',
+    name: 'Slack / Confirm Email',
+    author: 'c0dr',
+  },
+  {
+    id: 'twitch-reset-password',
+    name: 'Twitch / Reset Password',
+    author: 'EmersonGarrido',
+  },
+  {
     id: 'raycast-magic-link',
     name: 'Raycast / Magic Link',
     author: 'abhinandanwadwa',
