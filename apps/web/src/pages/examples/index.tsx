@@ -7,6 +7,11 @@ import Image from 'next/image';
 
 const items = [
   {
+    id: 'stack-overflow-tips',
+    name: 'Stack Overflow / Tips',
+    author: 'bruno88cabral',
+  },
+  {
     id: 'slack-confirm',
     name: 'Slack / Confirm Email',
     author: 'c0dr',
