@@ -7,6 +7,11 @@ import Image from 'next/image';
 
 const items = [
   {
+    id: 'apple-receipt',
+    name: 'Apple / Receipt',
+    author: 'relferreira',
+  },
+  {
     id: 'nike-receipt',
     name: 'Nike / Receipt',
     author: 'camillegachido',
