@@ -7,6 +7,11 @@ import Image from 'next/image';
 
 const items = [
   {
+    id: 'nike-receipt',
+    name: 'Nike / Receipt',
+    author: 'camillegachido',
+  },
+  {
     id: 'stack-overflow-tips',
     name: 'Stack Overflow / Tips',
     author: 'bruno88cabral',
