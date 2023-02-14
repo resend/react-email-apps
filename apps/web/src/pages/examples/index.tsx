@@ -7,6 +7,11 @@ import Image from 'next/image';
 
 const items = [
   {
+    id: 'github-access-token',
+    name: 'GitHub / Access Token',
+    author: 'bruno88cabral',
+  },
+  {
     id: 'apple-receipt',
     name: 'Apple / Receipt',
     author: 'relferreira',
