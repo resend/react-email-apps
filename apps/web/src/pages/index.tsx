@@ -18,7 +18,7 @@ export default function Web() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
       </Head>
-      <div className="h-screen-ios relative z-20 mx-auto flex h-screen max-w-7xl flex-col justify-between px-4">
+      <div className="h-screen-ios relative z-20 mx-auto flex h-screen max-w-7xl flex-col justify-between px-4 overflow-x-hidden">
         <Topbar />
         <div className="relative mx-auto flex max-w-3xl flex-col justify-center">
           <div className="max-w-[725px] text-center">

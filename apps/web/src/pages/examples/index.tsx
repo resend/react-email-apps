@@ -104,7 +104,7 @@ export default function Examples() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
       </Head>
-      <div className="h-screen-ios relative z-20 mx-auto flex max-w-7xl flex-col px-4">
+      <div className="h-screen-ios relative z-20 mx-auto flex max-w-7xl flex-col px-4 overflow-x-hidden">
         <Topbar />
         <div className="relative mx-auto flex max-w-3xl flex-col justify-center py-10">
           <div className="mb-12 max-w-[745px] text-center">
