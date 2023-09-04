@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 import { createClient } from '@supabase/supabase-js';
 import { NextApiRequest, NextApiResponse } from 'next';
 import is from '@sindresorhus/is';
-import { endOfToday, formatISO, startOfToday } from 'date-fns';
+import { v4 as uuid } from 'uuid';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
@@ -42,11 +42,14 @@ export default async function sendTest(
         },
       ]);
 
-      const sendPromise = resend.sendEmail({
+      const sendPromise = resend.emails.send({
         from: 'React Email <preview@react.email>',
         to: [to],
         subject,
         html,
+        headers: {
+          'X-Entity-Ref-ID': uuid(),
+        },
       });
 
       await Promise.all([savePromise, sendPromise]);
