@@ -30,7 +30,7 @@
     "autoprefixer": "10.4.13",
     "eslint": "7.32.0",
     "eslint-config-custom": "*",
-    "postcss": "8.4.19",
+    "postcss": "8.4.31",
     "tailwind-config": "*",
     "tailwindcss": "3.2.4",
     "tsconfig": "*",
